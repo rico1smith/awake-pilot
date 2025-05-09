@@ -79,60 +79,57 @@
     <hr style="border: none; border-top: 5px solid #cfc3a2; margin: 0; padding: 0;">
    <!-- <div class="meet-team-header">System Overview</div>-->
     <section class="meet-team-section" style="display: block; max-width: 1400px; margin: 0 auto; background: #E6E6E6;">        
-        <div style="text-align: center;">
-            <img src="images/level_2_diagram.png" alt="Awake Pilot Infographic" style="width: 90%; max-width: 700px; margin-top: 24px; border-radius: 8px; box-shadow: 0 -10px 16px rgba(0,0,0,0.08), 0 10px 16px rgba(0,0,0,0.08);">
-            <h3 style="margin-top: 18px;">Level 2 Diagram</h3>
-        </div>
-        <div style="max-width: 900px; margin: 0 auto 40px auto; font-family: 'Inter', sans-serif; font-size: 1.15em; line-height: 1.6; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 32px 32px 24px 32px;">
-            <ul style="padding-left: 0; list-style: none;">
-                <li><b>Image Processing Subsystem <span style='color:#0074d9;'>(Blue)</span>:</b>
-                    <ul>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 32px;">
+            <div style="flex: 1 1 380px; min-width: 320px; max-width: 700px; display: flex; flex-direction: column; align-items: center;">
+                <img src="images/level_2_diagram.png" alt="Awake Pilot Infographic" style="width: 90%; max-width: 700px; margin-top: 24px; border-radius: 8px; box-shadow: 0 -10px 16px rgba(0,0,0,0.08), 0 10px 16px rgba(0,0,0,0.08);">
+                <h3 style="margin-top: 18px;">Level 2 Diagram</h3>
+                <div style="text-align: left; font-family: 'Inter', sans-serif; font-size: 1.15em; margin-top: 18px;">
+                    <h4 style="color: #0074d9; margin-bottom: 6px;">Image Processing Subsystem (Blue):</h4>
+                    <ul style="margin-top: 0;">
                         <li><b>Facial Movement Indicators:</b> Detects specific facial cues such as eye closure and head tilt to assess driver fatigue.</li>
                         <li><b>Logitech C270 Camera:</b> Captures real-time video feed of the driver's face.</li>
                         <li><b>OpenCV Fatigue Detection:</b> Processes facial data to identify signs of drowsiness using AI-driven algorithms.</li>
                     </ul>
-                </li>
-                <li><b>Radar Subsystem <span style='color:#dc7700;'>(Orange)</span>:</b>
-                    <ul>
+                    <h4 style="color: #dc7700; margin-bottom: 6px;">Radar Subsystem (Orange):</h4>
+                    <ul style="margin-top: 0;">
                         <li><b>Chest Movement Indicators:</b> Monitors subtle chest movements to detect micro-motions associated with fatigue.</li>
                         <li><b>XE125 Radar Sensor Board:</b> Gathers radar data to track chest movement patterns.</li>
                         <li><b>Radar Micro-Motion Monitoring:</b> Analyzes radar data to identify irregularities indicating potential fatigue or unconsciousness.</li>
                     </ul>
-                </li>
-                <li><b>Power <span style='color:#bd9c00;'>(Yellow)</span>:</b>
-                    <ul>
+                    <h4 style="color: #bd9c00; margin-bottom: 6px;">Power (Yellow):</h4>
+                    <ul style="margin-top: 0;">
                         <li><b>12V Battery:</b> Powers all system components, ensuring stable and continuous operation.</li>
                     </ul>
-                </li>
-                <li><b>Processing Unit (Jetson Nano):</b>
-                    <ul>
+                    <h4 style="color: #222; margin-bottom: 6px;">Processing Unit (Jetson Nano):</h4>
+                    <ul style="margin-top: 0;">
                         <li><b>Jetson Nano:</b> Serves as the central processing hub, integrating data from radar and camera subsystems to identify fatigue indicators and activate alerts.</li>
                     </ul>
-                </li>
-                <li><b>Alert Subsystem <span style='color:green;'>(Green)</span>:</b>
-                    <ul>
+                    <h4 style="color: green; margin-bottom: 6px;">Alert Subsystem (Green):</h4>
+                    <ul style="margin-top: 0;">
                         <li><b>USB 3-Speed Vibration Motor:</b> Activates physical vibration alerts to awaken the driver.</li>
                         <li><b>Active Piezo Electric Buzzer:</b> Emits an audible alarm as a secondary alert mechanism.</li>
                         <li><b>Alert User:</b> Executes the final alert mechanism using both sound and vibration feedback to ensure driver awareness.</li>
                     </ul>
-                </li>
-            </ul>
-        </div>
-        <h2 style="font-family: 'Inter', sans-serif; color: #17726d; font-size: 2.2em; margin-bottom: 18px; text-align: center; width: 100%;">System Demo Videos</h2>
-        <div style="display: flex; flex-direction: column; gap: 32px; align-items: center; width: 100%;">
-            <div>
-                <h3 style="font-family: 'Inter', sans-serif; color: #222; font-size: 1.3em; margin-bottom: 10px; text-align: center;">Image Processing Demo</h3>
-                <video controls style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                    <source src="videos/Imagine_processing_demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                </div>
             </div>
-            <div>
-                <h3 style="font-family: 'Inter', sans-serif; color: #222; font-size: 1.3em; margin-bottom: 10px; text-align: center;">Alert Demo</h3>
-                <video controls style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                    <source src="videos/alert_demo.mov" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div style="flex: 1 1 380px; min-width: 320px; max-width: 540px; display: flex; flex-direction: column; align-items: flex-start;">
+                <h2 style="font-family: 'Inter', sans-serif; color: #17726d; font-size: 2.2em; margin-bottom: 18px; text-align: center; width: 100%;">System Demo Videos</h2>
+                <div style="display: flex; flex-direction: column; gap: 32px; align-items: center; width: 100%;">
+                    <div>
+                        <h3 style="font-family: 'Inter', sans-serif; color: #222; font-size: 1.3em; margin-bottom: 10px; text-align: center;">Image Processing Demo</h3>
+                        <video controls style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <source src="videos/Imagine_processing_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Inter', sans-serif; color: #222; font-size: 1.3em; margin-bottom: 10px; text-align: center;">Alert Demo</h3>
+                        <video controls style="max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <source src="videos/alert_demo.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
