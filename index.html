@@ -1,39 +1,110 @@
 <!DOCTYPE html>
+<style>
+    body {
+        margin: 0;
+        background-color: #ded6c0;
+    }
+    header {
+        background-color: #17726d;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    header h1 {
+        font-size: 5.5em;
+        margin-bottom: 0.05em;
+        margin-top: 0;
+    }
+    header p {
+        margin-top: 0.05em;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+    .meet-team-section {
+        background-color: #ded6c0;
+        padding: 30px 0 20px 0;
+    }
+    .meet-team-header {
+        background-color: #919191;
+        color: #fff;
+        padding: 15px 0 15px 32px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        text-align: left;
+        font-size: 2em;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        margin-bottom: 8px;
+    }
+    .section-header {
+        background: #fff;
+        color: #222;
+        font-family: 'Inter', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        padding: 18px 36px 12px 36px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-left: 32px;
+        margin-top: 48px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        display: inline-block;
+    }
+    .colored-section {
+        background-color: #ded6c0;
+        font-size: 1.2em;
+        padding: 48px 36px 48px 36px;
+        border-radius: 0 0 12px 12px;
+        margin: 0 32px 48px 32px;
+    }
+</style>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Awake-Pilot Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header style="font-family: 'Inter', sans-serif; text-align: center;">
         <h1>Awake-Pilot</h1>
-        <p>Driver Fatigue Detection System | MSU Capstone Project</p>
+        <p>AI Powered Driver Drowsiness Detection System | Team Awake-Pilot's Mississippi State University's Capstone Project</p>
     </header>
-
-    <section>
-        <h2>About the Project</h2>
-        <p>Awake-Pilot is an AI-driven driver monitoring system that helps prevent accidents caused by drowsy driving.</p>
+    <nav style="background-color: #17726d; display: flex; justify-content: center; align-items: center; padding: 4px 0 12px 0; font-family: 'Inter', sans-serif; margin-top: 0;">
+        <a href="index.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Home</a>
+        <span style="color: #fff; font-size: 1.5em;">|</span>
+        <a href="team.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Meet the Team</a>
+        <span style="color: #fff; font-size: 1.5em;">|</span>
+        <a href="high-level-description.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">High-Level Project Description</a>
+        <span style="color: #fff; font-size: 1.5em;">|</span>
+        <a href="relevant_documentation.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Relevant Documentation</a>
+    </nav>
+    
+    <hr style="border: none; border-top: 2px solid #000; margin: 0; padding: 0;">
+    <div class="meet-team-header" style="font-family: 'Inter', sans-serif;">About the Project</div>
+    <section style="background-color: #ded6c0; padding: 8px 32px 48px 32px; min-height: 180px; margin-top: 0;">
+        <p style="font-family: 'Inter', sans-serif; margin-top: 0; font-size: 1.35em; line-height: 1.3;">Drowsy driving is one of the leading causes of vehicular-related accidents, accounting for more than 1,200 fatal crashes and roughly 90,000 police‑reported accidents in the United States each year. Commercial and passenger vehicles are lacking in an affordable, reliable means of accurately detecting drowsiness before it turns fatal. 
+        <p style="font-family: 'Inter', sans-serif; margin-top: 0; font-size: 1.35em; line-height: 1.3;">Awake‑Pilot aims to address this problem by providing real-time alerts to the user once signs of fatigue are detected. Upon starting the vehicle, the dashboard-mounted device continuously monitors for changes in the driver’s face and upper body for any indicators of drowsiness in order to issue an alert to the driver if needed. Below shows the camera-and-radar module, powered by the vehicle’s auxiliary port, and the connected seat-cushion alert unit for both auditory and vibration alerts. 
+            
+        </p>
+        <div style="text-align: center;">
+            <img src="images/Awake_Pilot_infographic.png" alt="Awake Pilot Infographic" style="width: 80%; max-width: 600px; margin-top: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        </div>
     </section>
-
-    <section>
-        <h2>Key Features</h2>
-        <ul>
-            <li>Jetson Nano for real-time processing</li>
-            <li>Facial and eye movement detection</li>
-            <li>Infrared + RGB camera integration</li>
-            <li>Audio and seat vibration alerts</li>
-        </ul>
+    <hr style="border: none; border-top: 2px solid #000; margin: 0; padding: 0;">
+    <div class="meet-team-header" style="font-family: 'Inter', sans-serif; margin-top: 0;">High-Level Project Description</div>
+    <section style="background-color: #ded6c0; padding: 48px 32px; min-height: 180px;">
+        <p>This project integrates multiple subsystems, including facial recognition, radar-based motion detection, and an alert mechanism, all running on a Jetson Nano platform. The goal is to provide a seamless, real-time solution for monitoring driver alertness and issuing timely warnings to prevent potential accidents. <br><br>Key features include: <br>- Real-time facial and eye movement detection <br>- Infrared and RGB camera integration <br>- Audio and seat vibration alerts <br>- User-friendly interface for monitoring and configuration</p>
     </section>
-
-    <section>
-        <h2>Meet the Team</h2>
-        <p>Maurico Smith and team — Senior Electrical Engineering Students at MSU.</p>
-    </section>
-
-    <section>
-        <h2>Demo & Media</h2>
-        <img src="images/awake-pilot-diagram.png" alt="System Diagram" width="400">
+    <hr style="border: none; border-top: 2px solid #000; margin: 0; padding: 0;">
+    <div class="meet-team-header" style="font-family: 'Inter', sans-serif; margin-top: 0;">Relevant Documentation</div>
+    <section style="background-color: #ded6c0; padding: 48px 32px; min-height: 180px;">
+        <p>Documentation for this project includes system architecture diagrams, user manuals, and technical references. <br><br>Sample links: <br>- <a href="#" style="color: #17726d; text-decoration: underline;">System Architecture Diagram (PDF)</a> <br>- <a href="#" style="color: #17726d; text-decoration: underline;">User Manual</a> <br>- <a href="#" style="color: #17726d; text-decoration: underline;">API Reference</a></p>
     </section>
 </body>
 </html>
