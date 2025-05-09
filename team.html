@@ -13,35 +13,37 @@
     
     header {
         background-color: #17726d;
-        padding: 20px;
+        padding: 20px 0 4px 0;
         color: white;
         text-align: center;
         width: 100%;
         margin-bottom: 0;
         padding-bottom: 10px;
-    }    
+    }   
     header h1 {
-        font-size: 5.5em;
+        font-size: 4.5em;
         margin-bottom: 0.05em;
         margin-top: 0;
     }
     header p {
         margin-top: 0.05em;
     }
-        .meet-team-header {
-            background-color: #919191;
-            color: #fff;
-            padding: 15px 0 15px 32px;
-            margin: 0;
-            width: 100%;
-            border-radius: 0;
-            text-align: left;
-            font-size: 1.8em;
-            font-weight: bold;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
+   
+    .meet-team-header {
+        background-color: #919191;
+        color: #fff;
+        padding: 15px 0 15px 32px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        text-align: left;
+        font-size: 1.8em;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
         .meet-team-section {
-            background-color: #ded6c0;
+            background-color: #E6E6E6;
             padding: 40px 0 20px 0;
             display: flex;
             justify-content: center;
@@ -51,65 +53,95 @@
             margin: 0 auto;
             flex-wrap: wrap;
         }
+
+        .section-header {
+        background: #fff;
+        color: #222;
+        font-family: 'Inter', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        padding: 18px 36px 12px 36px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        margin-left: 32px;
+        margin-top: 48px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        display: inline-block;
+    }
     </style>
 </head>
 <body>
     <header style="font-family: 'Inter', sans-serif; text-align: center;">
         <h1>Awake-Pilot</h1>
         <p>AI Powered Driver Drowsiness Detection System | Team Awake-Pilot's Mississippi State University's Capstone Project</p>
+        <hr style="border: none; border-top: 5px solid #cfc3a2; margin: 0; padding: 0;">
     </header>
-    <nav style="background-color: #17726d; display: flex; justify-content: center; align-items: center; padding: 4px 0 12px 0; font-family: 'Inter', sans-serif; margin-top: 0;">
-        <a href="index.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Home</a>
-        <span style="color: #fff; font-size: 1.5em;">|</span>
-        <a href="team.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Meet the Team</a>
-        <span style="color: #fff; font-size: 1.5em;">|</span>
-        <a href="high-level-description.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">High-Level Project Description</a>
-        <span style="color: #fff; font-size: 1.5em;">|</span>
-        <a href="relevant_documentation.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Relevant Documentation</a>
+    <nav style="background-color: #17726d; display: flex; justify-content: center; align-items: center; padding: 4px 0 12px 0; font-family: 'Inter', sans-serif; margin-top: 0; width: 100%; box-sizing: border-box;">
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 1200px;">
+            <a href="index.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Home</a>
+            <span style="color: #fff; font-size: 1.5em;">|</span>
+            <a href="about.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">About</a>
+            <span style="color: #fff; font-size: 1.5em;">|</span>
+            <a href="team.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Meet the Team</a>
+            <span style="color: #fff; font-size: 1.5em;">|</span>
+            <a href="high-level-description.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">High-Level Project Description</a>
+            <span style="color: #fff; font-size: 1.5em;">|</span>
+            <a href="relevant_documentation.html" style="color: #fff; font-size: 1.1em; font-weight: bold; text-decoration: none; margin: 0 16px;">Relevant Documentation</a>
+        </div>
     </nav>
-    <hr style="border: none; border-top: 2px solid #000; margin: 0; padding: 0; font-family: 'Times New Roman', Times, serif;">
-    <div class="meet-team-header" style="font-family: 'Inter', sans-serif;">Awake-Pilot Team</div>
-    <section class="meet-team-section" style="font-family: 'Inter', sans-serif;">
-        <div style="display: flex; flex-direction: column; align-items: center; width: 300px; min-height: 480px;">
-            <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 16px;">Advisor</div>
-            <img src="images/John_Ball.jpg" alt="John B. Ball" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 3px solid #222; margin-bottom: 16px;">
-            <div style="font-size: 1.6em; font-weight: bold; margin-bottom: 10px; text-align: center;">John B. Ball</div>
-            <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.6em;">ECE Professor</div>
+    <hr style="border: none; border-top: 5px solid #cfc3a2; margin: 0; padding: 0;">
+    <section style="background-color: #E6E6E6; padding: 8px 40px 48px 40px; min-height: 180px; margin-top: 0;">
+        <p style="font-weight: bold; font-family: 'Inter', sans-serif; margin: 15px 0 0px 12px; font-size: 3.5em; line-height: 1.2; text-align: center;">Meet the Team</p>
+        <p style="font-family: 'Inter', sans-serif; margin: 18px 0 0 0; font-size: 1.35em; line-height: 1.5; text-align: center; max-width: 1350px; margin-left: auto; margin-right: auto;">
+            The Awake-Pilot team is composed of engineering students focused on creating a driver-monitoring system that detects fatigue using radar motion analysis and AI-powered facial recognition, delivering real-time alerts to prevent drowsy driving accidents and enhance road safety.
+        </p>
+    <section class="meet-team-section" style="font-family: 'Inter', sans-serif; padding: 60px 0 40px 0; gap: 48px; max-width: 1600px; margin: 0 auto; flex-direction: column;">
+        <div style="display: flex; justify-content: center; gap: 48px; margin-bottom: -80px; max-width: 1500px; margin-left: auto; margin-right: auto;">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 340px; min-height: 540px;">
+                <div style="font-size: 2.2em; font-weight: bold; margin-bottom: 24px;">Advisor</div>
+                <img src="images/John_Ball.jpg" alt="John B. Ball" style="border-radius: 50%; width: 240px; height: 240px; object-fit: cover; object-position: center 20%; border: 6px solid #cfc3a2; margin-bottom: 20px;">
+                <div style="font-size: 2.4em; font-weight: bold; margin-bottom: 14px; text-align: center;">John B. Ball</div>
+                <div style="font-weight: bold; margin: 0 3px 10px; text-align: center; font-size: 1.2em;">ECE Professor</div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; width: 340px; min-height: 540px;">
+                <div style="font-size: 2.2em; font-weight: bold; margin-bottom: 24px;">Team Lead</div>
+                <div style="width: 240px; height: 240px; border-radius: 50%; overflow: hidden; border: 6px solid #cfc3a2; margin-bottom: 20px;">
+                    <img src="images/samuel_trotter.png" alt="Samuel Trotter" style="width: 105%; height: 105%; object-fit: cover; border-radius: 90%; transform: translateX(-1px); object-position: center 20%;">
+                </div>
+                <div style="font-size: 2.4em; font-weight: bold; margin-bottom: 14px; text-align: center;">Samuel Trotter</div>
+                <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.2em;">Electrical Engineering Student</div>
+                <div style="text-align: center; font-size: 1.2em;">Radar-Based Motion Detection Subsystem <span style="font-weight: bold;">Lead</span></div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; width: 340px; min-height: 540px;">
+                <div style="font-size: 2.2em; font-weight: bold; margin-bottom: 24px;">Project Manager</div>
+                <img src="images/Maurico_Smith.jpg" alt="Maurico Smith" style="border-radius: 50%; width: 240px; height: 240px; object-fit: cover; border: 6px solid #cfc3a2; margin-bottom: 20px;">
+                <div style="font-size: 2.4em; font-weight: bold; margin-bottom: 14px; text-align: center;">Maurico Smith</div>
+                <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.2em;">Electrical Engineering Student</div>
+                <div style="text-align: center; font-size: 1.2em;">Facial Detection & Image Processing Subsystem <span style="font-weight: bold;">Support</span></div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; width: 340px; min-height: 540px;">
+                <div style="font-size: 2.2em; font-weight: bold; margin-bottom: 24px;">&nbsp;</div>
+                <img src="images/Ranjan_Subedi.png" alt="Ranjan Subedi" style="border-radius: 50%; width: 240px; height: 240px; object-fit: cover; border: 6px solid #cfc3a2; margin-bottom: 20px;">
+                <div style="font-size: 2.4em; font-weight: bold; margin-bottom: 14px; text-align: center;">Ranjan Subedi</div>
+                <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.2em;">Computer Engineering Student</div>
+                <div style="text-align: center; font-size: 1.2em;">Facial Detection & Image Processing Subsystem <span style="font-weight: bold;">Lead</span></div>
+            </div>
         </div>
-        <div style="display: flex; flex-direction: column; align-items: center; width: 300px; min-height: 480px;">
-            <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 16px;">Team Lead</div>
-            <img src="images/samuel_trotter.png" alt="Samuel Trotter" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 3px solid #222; margin-bottom: 16px;">
-            <div style="font-size: 1.6em; font-weight: bold; margin-bottom: 10px; text-align: center;">Samuel Trotter</div>
-            <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.6em;">Electrical Engineering Student</div>
-            <div style="text-align: center; font-size: 1.6em;">Radar-Based Motion Detection Subsystem <span style="font-weight: bold;">Lead</span></div>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center; width: 300px; min-height: 480px;">
-            <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 16px;">Project Manager</div>
-            <img src="images/Maurico_Smith.jpg" alt="Maurico Smith" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 3px solid #222; margin-bottom: 16px;">
-            <div style="font-size: 1.6em; font-weight: bold; margin-bottom: 10px; text-align: center;">Maurico Smith</div>
-            <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.6em;">Electrical Engineering Student</div>
-            <div style="text-align: center; font-size: 1.6em;">Facial Detection & Image Processing Subsystem <span style="font-weight: bold;">Support</span></div>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center; width: 300px; min-height: 480px;">
-            <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 16px;">&nbsp;</div>
-            <img src="images/Ranjan_Subedi.png" alt="Ranjan Subedi" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 3px solid #222; margin-bottom: 16px;">
-            <div style="font-size: 1.6em; font-weight: bold; margin-bottom: 10px; text-align: center;">Ranjan Subedi</div>
-            <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.6em;">Computer Engineering Student</div>
-            <div style="text-align: center; font-size: 1.6em;">Facial Detection & Image Processing Subsystem <span style="font-weight: bold;">Lead</span></div>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center; width: 300px; min-height: 480px;">
-            <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 16px;">&nbsp;</div>
-            <img src="images/Donovan_Bradley.png" alt="Donovan Bradley" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 3px solid #222; margin-bottom: 16px;">
-            <div style="font-size: 1.6em; font-weight: bold; margin-bottom: 10px; text-align: center;">Donovan Bradley</div>
-            <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.6em;">Electrical Engineering Student</div>
-            <div style="text-align: center; font-size: 1.6em;">Alert Subsystem & Radar-Based Motion Detection Subsystem <span style="font-weight: bold;">Support</span></div>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center; width: 300px; min-height: 480px;">
-            <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 16px;">&nbsp;</div>
-            <img src="images/Dalton_WIlliams.png" alt="Dalton Williams" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 3px solid #222; margin-bottom: 16px;">
-            <div style="font-size: 1.6em; font-weight: bold; margin-bottom: 10px; text-align: center;">Dalton Williams</div>
-            <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.6em;">Electrical Engineering Student</div>
-            <div style="text-align: center; font-size: 1.6em;">Alert Subsystem <span style="font-weight: bold;">Lead</span></div>
+        <div style="display: flex; justify-content: center; gap: 48px; max-width: 900px; margin-left: auto; margin-right: auto;">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 340px; min-height: 540px;">
+                <div style="font-size: 2.2em; font-weight: bold; margin-bottom: 24px;">&nbsp;</div>
+                <img src="images/Donovan_Bradley.png" alt="Donovan Bradley" style="border-radius: 50%; width: 240px; height: 240px; object-fit: cover; border: 6px solid #cfc3a2; margin-bottom: 20px;">
+                <div style="font-size: 2.4em; font-weight: bold; margin-bottom: 14px; text-align: center;">Donovan Bradley</div>
+                <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.2em;">Electrical Engineering Student</div>
+                <div style="text-align: center; font-size: 1.2em;">Alert Subsystem & Radar-Based Motion Detection Subsystem <span style="font-weight: bold;">Support</span></div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; width: 340px; min-height: 540px;">
+                <div style="font-size: 2.2em; font-weight: bold; margin-bottom: 24px;">&nbsp;</div>
+                <img src="images/Dalton_WIlliams.png" alt="Dalton Williams" style="border-radius: 50%; width: 240px; height: 240px; object-fit: cover; border: 6px solid #cfc3a2; margin-bottom: 20px;">
+                <div style="font-size: 2.4em; font-weight: bold; margin-bottom: 14px; text-align: center;">Dalton Williams</div>
+                <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 1.2em;">Electrical Engineering Student</div>
+                <div style="text-align: center; font-size: 1.2em;">Alert Subsystem <span style="font-weight: bold;">Lead</span></div>
+            </div>
         </div>
     </section>
 </body>
