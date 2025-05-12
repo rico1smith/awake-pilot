@@ -1,12 +1,12 @@
 # Ignore large media files
-*.mp4
+
 *.mov
 *.avi
 
 
 # Ignore specific large files
-videos/Background.mp4
+
 # Ignore large video files
-*.mp4
+
 *.mov
 *.avi
